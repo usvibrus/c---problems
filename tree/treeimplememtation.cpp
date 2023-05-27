@@ -29,6 +29,7 @@ struct node
         data = val;
         left = NULL;
         right = NULL;
+        
     }
 };
 

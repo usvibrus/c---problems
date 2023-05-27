@@ -1,63 +1,74 @@
 #include <iostream>
-#include<bits/stdc++.h>
-
+#include <vector>
+#include <algorithm>
 using namespace std;
 
+void reversear(int T) {
 
-void solve(){
 
-vector<int> nums(4);
-        for(int i=0;i<4;i++){ 
-            
-            cin>>nums[i];
-            
-            
-            }
-        sort(nums.begin(),nums.end());
+    for (int iy1 = 0; iy1 < T; iy1++) {
 
-  int pp =0;
 
-  if(p>1){
+        int number1, given2num;
+        cin >> number1 >> given2num;
 
-    p++;
+        vector<int> tempvec(number1);
 
-  }
-        int anse = 0;
 
-        for(int i=0;i<3;i++) {anse+=nums[i];
-       
-       
+        for (int i = 0; i < number1; i++) {
+
+
+            cin >> tempvec[i];
+
+
         }
-        int res = nums[3];
-        if(anse<res){
-            
 
-            
-       if(p>1){
+        vector<pair<int, int>> pairsc(given2num);
 
-      p++;
-    
+
+        for (int i = 0; i < given2num; i++) {
+
+            cin >> pairsc[i].first >> pairsc[i].second;
+
         }
-             cout<<"YES"<<endl;
-             }
-        else{
-             cout<<"NO"<<endl;
-             
-             }
+
+        vector<long long> sumation(number1 + 1, 0);
 
 
+        for (int i = 1; i <= number1; i++) {
 
+
+            sumation[i] = sumation[i - 1] + tempvec[i - 1];
+
+        }
+
+        sort(tempvec.rbegin(), tempvec.rend());
+
+        long long nnn1 = 0;
+        for (int i = 0; i < given2num; i++) {
+
+
+            int lej = pairsc[i].first;
+
+            int rigt = pairsc[i].second;
+
+            nnn1 += sumation[rigt] - sumation[lej - 1];
+        }
+
+        cout << nnn1 << endl;
+        
+        for (int i = 0; i < number1; i++) {
+            cout << tempvec[i] << " ";
+        }
+        cout << endl;
+    }
 }
 
 int main() {
-    int y;
-    cin>>y;
-    while(y--){
+    int T;
+    cin >> T;
 
-solve();
+    reversear(T);
 
-        
-    }
- // your code goes here
- return 0;
+    return 0;
 }
