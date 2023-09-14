@@ -23,10 +23,12 @@ int main()
 
 ==============================================================================================================================================
 
+multimap
 
 //MULTIMAP
 
 //Sort Characters By Frequency leetcode
+
 
 class Solution {
 public:
@@ -57,12 +59,52 @@ public:
     }
 };
 
+
+
 ====================================================================================================================================
 
 min heap == stores elements in acending order
 
- //defining mean heap
+
+ //defining mean heap // stores from small to greater acending order
        priority_queue<int,vector<int>,greater<int>>minheap;
 
 
 
+/// Maxx heap 
+//stores in decending order / / greter to small
+
+
+   priority_queue <int> maxh; 
+   
+    
+
+    
+===========================================================================================================================================
+
+
+
+//making 2d vector of certian size 
+
+int n =9;
+vector<vector<int>>MP (n, vector<int>(n,-1)); // iniatialinzing 2d vector of  size n strong element -1
+
+=========================================================
+
+//initialize string of a size with stroed element 
+
+int count =8
+char it =p
+ string ss(count,it) // this ss will store 8 char  it i.e pppppppp
+
+ ====================================================================
+
+ vector<int>v(count,temp); // this means vector<int>v(2,5); create a vector v and push 5 2 times ie 5 5
+
+===============
+
+
+
+char - '0' // char will get converted  into intger 
+
+============

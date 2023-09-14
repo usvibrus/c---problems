@@ -1,6 +1,7 @@
 
 
 // brute froce
+/sadunffdi
 
 class sol(string s)
 {
@@ -36,8 +37,8 @@ return maxi;
 
     ///////////////////optimized
 
-    vector<int>
-        v(256, -1);
+    vector<int>v(256, -1);
+    
 int j = 0;
 int ans = INT_MIN;
 for (int i = 0; i < s.length(); i++)

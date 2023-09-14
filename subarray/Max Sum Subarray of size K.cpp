@@ -24,3 +24,21 @@ class sol{
         return ans;
         
     };
+
+
+    int i=0;
+    int  j=0;
+s
+
+int sum=0;
+int maxsu=0;
+    while(j<n){
+
+      
+      
+   
+
+
+
+
+    }

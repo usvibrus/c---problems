@@ -36,3 +36,35 @@ public:
         
     }
 };
+
+
+////////////For array which contain Negative ele or OPTIMIZED WITH O(N) SPACE
+
+   k = 8 
+        int len=0;
+        int sum=0;
+
+        map<int,int>mp;
+        
+        for(int i=0;i<N;i++)
+        { 
+            sum+=A[i];
+        
+            if(sum==K){
+                
+                len=max(len,i+1);
+
+            }
+        
+            int remaining=sum-K;
+            if(mp.find(remaining)!=mp.end()){
+                int maxi=i-mp[remaining];
+                len=max(len,maxi);
+            }
+            if(mp.find(sum)==mp.end()){
+                mp[sum]=i;
+            }
+        } 
+        return len
+
+    }

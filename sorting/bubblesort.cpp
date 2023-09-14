@@ -1,46 +1,74 @@
 
 
-int main(){
+int n;
+cin >> n;
 
+vector<int> arr;
 
+for (int i = 0; i < n; i++)
+{
 
+    int a;
+    cin >> a;
 
-    int  n = arr size
+    arr.push_back(a);
+}
 
-    int current = 0;
+for (int i = 0; i < n; i++)
+{
+    for (int j = 1; j < n; j++)
+    {
 
-    while(current<n){
+        if (arr[j - 1] > arr[i])
+        {
 
-
-        for(int i=0;i<n-current;i++){
-
-
-            if(arr[i] > arr[i+1]){
-             swap(arr,i,i+1);
-            }
-
-
+            swap(arr[j - 1], arr[i]);
         }
-
-        current++;
-
     }
 }
 
 
-//SELECTOIN SORT
-// 
 
 
-for(int i=0;i<n-1;i++){
 
-    for(j =i+1;j<n;j++){
-       
-        if( arr[j] < arr[i]){
+for (int i = 0; i < n; i++)
+{
+    cout << arr[i] << " ";
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SELECTOIN SORT
+//Selection sort is a simple sorting algorithm that repeatedly finds the minimum element from an unsorted list and moves it to the beginning of the list until all elements are sorted.
+
+for (int i = 0; i < n - 1; i++)
+{
+
+    for (j = i + 1; j < n; j++)
+    {
+
+        if (arr[j] < arr[i])
+        {
+
             swap();
-            int 
+            int
         }
-
-
     }
 }

@@ -7,9 +7,10 @@ class Solution{
       
       //base case
       
-      
       if(root==NULL || (root->right == NULL && root->left==NULL)){
+      
           return 1;
+      
       }
      
     int leftsum=0;

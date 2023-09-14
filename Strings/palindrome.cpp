@@ -27,4 +27,4 @@ class Solution {
     // If the while loop terminates, the string is not a palindrome, so return false
     return false;
   }
-}
+} 
