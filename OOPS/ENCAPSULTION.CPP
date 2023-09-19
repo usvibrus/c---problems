@@ -10,15 +10,23 @@ Encapsulation is about wrapping data and methods into a single class and protect
 class ENCAPSULTION
 {
 private:
-    int bankballance;
+    int bankbalance;
     int securitycode;
 public:
    
 ENCAPSULTION(){
+     bankballance=100000000;
+     securitycode=1234;
 
     
+}
+
+void showbalance(){
+
+    cout<<bankbalance
 }
 
 
 
 };
+
