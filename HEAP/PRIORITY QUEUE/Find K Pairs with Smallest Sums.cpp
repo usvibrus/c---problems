@@ -1,7 +1,6 @@
 373. Find K Pairs with Smallest Sums
 Medium
-5.4K
-314
+
 Companies
 You are given two integer arrays nums1 and nums2 sorted in ascending order and an integer k.
 

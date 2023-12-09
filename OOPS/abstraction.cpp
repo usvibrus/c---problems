@@ -2,7 +2,7 @@
 
 
 
-classabstraction{ 
+class abstraction{ 
     
     private: 
     
@@ -11,9 +11,19 @@ classabstraction{
      public: 
      
      // method to set values of private members 
-     void set(intx,inty) { a = x; b = y; }
+     void set(intx,inty) {
+       a = x; 
+       b = y; 
+
+       }
      
-      voiddisplay() { cout<<"a = "<< a <<endl; cout<<"b = "<< b <<endl; 1} };
+      voiddisplay() {
+         cout<<"a = "<< a <<endl; 
+         cout<<"b = "<< b <<endl; 
+         
+         } 
+      
+      };
       
 
        intmain() {

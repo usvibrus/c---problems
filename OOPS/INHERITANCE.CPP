@@ -1,38 +1,59 @@
-
-class parent{
-
-public:
+#include <iostream>
+using namespace std;
 
 
-
+class polymorphism{
+  
+  
+  public:
+   
+    int add(int a,int b){
+      return a+b;
+    }
+    
+    int add(int a,int b,int c){
+      
+      return a+b+c;
+      
+    }
+  
+  
+  
 };
 
 
-class child: public parent{
 
+
+class derived : public polymorphism{
+  
+  
+  
+  
+  
 };
 
 
-
+int main() 
+{
+   derived ex;
+   
+   cout<<ex.add(1,2,3);
+   
+}
 //acess specifier defines the type of class from which we are exporting , the parent class is private or public
 
 
-classvechile{
-     public: stringcolor; 
-     intmax_speed; 
-     }; 
-     
-     
-     class  car:public vehicle{ 
-        
-        intnum_gears; }; 
-        
-        
-        class bicycle:public vehicle{ 
-            bool is_foldable
-             }; 
-             
-    class truck:public vehicle{ 
 
-        intmax_weight; 
-        };
+//single level 
+  
+  parent class
+     |
+     |
+ child class
+
+
+
+
+
+
+

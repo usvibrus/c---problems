@@ -26,3 +26,18 @@ while(curr!=NULL){
 }
     
 }
+
+
+prec=null
+curr = head;
+next 
+
+
+while(curr!=NULL){
+
+
+   next= curr->next;
+
+   curr=>next =prev;
+
+}

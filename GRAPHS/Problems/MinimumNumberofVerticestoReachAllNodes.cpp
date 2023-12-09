@@ -17,7 +17,7 @@ public:
 
             // u----->v
             //   \
-           //    \
+            //    \
             //    v
 
             indegreexist[v] = true; // marking true if indegeee exist

@@ -46,8 +46,7 @@ class Solution{
               ans.push_back(a[i]);
               
           }
-          
-          maxi= max(maxi,a[i]);
+        maxi= max(maxi,a[i]);
           
       }
 

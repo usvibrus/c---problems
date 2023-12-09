@@ -5,28 +5,48 @@ Encapsulation refers to bundling data and the methods that operate on that data 
   Encapsulation can be used to hide both data members and data functions or methods associated with an instantiated class or object. In other words: 
 Encapsulation is about wrapping data and methods into a single class and protecting it from outside intervention.
 
-
-
-class ENCAPSULTION
-{
+#include <iostream>
+using namespace std;
+class Student {
+// private data members
 private:
-    int bankbalance;
-    int securitycode;
+string studentName;
+int studentRollno;
+int studentAge;
+// get method for student name to access
+// private variable studentName
 public:
-   
-ENCAPSULTION(){
-     bankballance=100000000;
-     securitycode=1234;
-
-    
+string getStudentName() {
+return studentName;
 }
-
-void showbalance(){
-
-    cout<<bankbalance
+// set method for student name to set
+// the value in private variable studentName
+void setStudentName(string studentName) {
+this -> studentName = studentName;                    // here we used "this" to resolve the abiguivity , beacuse we are recieving the parameter as same namw which are declared inside class so
+                                                      // to distingused it we used "this" , which refers to class member variable
+                                                       
 }
-
-
-
+// get method for student rollno to access
+// private variable studentRollno
+int getStudentRollno() {
+return studentRollno;
+}
+// set method for student rollno to set
+// the value in private variable studentRollno
+void setStudentRollno(int studentRollno) {
+this -> studentRollno = studentRollno;
+}
+// get method for student age to access
+// private variable studentAge
+int getStudentAge() {
+return studentAge;
+}
+// set method for student age to set
+// the value in private variable studentAge
+void setStudentAge(int studentAge) {
+this -> studentAge = studentAge;
+}
 };
-
+int main() {
+Student obj;
+// setting the values of the variables

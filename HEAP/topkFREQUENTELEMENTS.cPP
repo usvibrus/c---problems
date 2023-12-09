@@ -6,11 +6,15 @@
                            MIN HEAP = STORES IN ACENDING ORDER
                                MAX HEAP = STORES IN DECONDING ORDER
 
-                           class Solution
+class Solution
+
 {
+
 public:
+    
     vector<int> topKFrequent(vector<int> &nums, int k)
-    {
+     
+     {
 
         unordered_map<int, int> mp;
 

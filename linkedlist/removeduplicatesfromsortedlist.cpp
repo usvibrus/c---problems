@@ -4,7 +4,7 @@ Node *removeDuplicates(Node *head)
 
     if (head == NULL)
     {
-
+1233 445
         return NULL;
     }
 

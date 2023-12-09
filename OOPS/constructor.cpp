@@ -79,6 +79,7 @@ smartphone(smartphone &obj){
 
 
 
+
 /////////////EXAMPLE CODE // OF PARAMETRISE CONSTRUCTOR
 #include <iostream>
 using namespace std;

@@ -1,0 +1,2 @@
+& is used to get the memory address of a variable or to create a reference to it.
+* is used for dereferencing pointers to access the value stored at a memory address and in pointer declarations to specify that a variable is a pointer.
