@@ -10,17 +10,14 @@
 
 //so we are returning an 2d vector of travelsals at of each levels eg [[5],[4,9],[3,7],[1,2]]
 
-
 //we will solve this problem with help of queue
 
-
-
- vector<vector<int>> levelOrder(Node* node){
+vector<vector<int>> levelOrder(Node* node){
 
       vector<vector<int>>ans;
 
       if(node==NULL){
-        retur ans;
+        return ans;
       }
 
       queue<Node*>q; // we are making queuea Node* typ to to store Node*
@@ -39,7 +36,7 @@ while(1){
     return ans;
    }
 
-        vector<int>li;
+      vector<int>li;
 
       while(!size>0){
 
@@ -59,10 +56,7 @@ while(1){
 
         if(temp->right!=NULL){
         q.push(temp->right);cheking if root right not NULL then pushing the root->right into queue and agian the above process will repeate
-
-        
-        
-        
+ 
         }
               }
 
@@ -70,17 +64,7 @@ while(1){
               
               }
 
-
-
-
-
-
-
-
-      }
-
-      
-    
+      } 
     }
 
 
@@ -114,13 +98,9 @@ while(1){
           
       }
       
-      
-      
       return ans;
       
-      
-      
-      
+    
     }
 
 

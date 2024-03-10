@@ -5,6 +5,7 @@ cin >> n;
 
 vector<int> arr;
 
+//here in bubble sort we get greatest element in in last position each iteration
 for (int i = 0; i < n; i++)
 {
 

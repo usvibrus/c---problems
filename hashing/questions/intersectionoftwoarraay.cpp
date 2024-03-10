@@ -24,7 +24,7 @@ public:
 
             if (mp.find(key) != mp.end())
             {
-                count++;
+                   count++;
                 mp.erase(key);
             }
         }
@@ -32,3 +32,4 @@ public:
         return count;
     }
 };
+

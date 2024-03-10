@@ -42,3 +42,39 @@ while(!q.empty()){
  
 
 }
+
+
+
+///
+
+
+//LEFT VIEW 
+
+
+void printCorner(Node *root)
+{
+
+    
+    queue<Node*>q;
+
+    q.push(root);
+
+    while(!q.empty()){
+
+
+            int n = q.size();
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+}

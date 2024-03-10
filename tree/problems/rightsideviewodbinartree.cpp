@@ -23,10 +23,11 @@ public:
         }
         
         while(1){
-            
-            int size = Q.size();
-            if(size==0){
-                return ans;
+                                                                                 1
+            int size = Q.size();                                                2   3
+            if(size==0){                                                       5  9    9
+                                                                              9  8 
+                return ans;                                                  
             }
             while(size>0){
                 

@@ -16,7 +16,7 @@ public:
               
                if(mp.find(it)!=mp.end()){
                    auto temp = mp.find(it);
-               int count = temp->second;
+               int count = temp->second;  
 
 
                string ss(count,it); // REMEMBER THIS THIS MEANS PUSHING STRING IT COUNT TIMES    eg string(3,p);  that will equal to  " string = ppp" , it will push p 3 times in string

@@ -18,9 +18,6 @@ while(curr!=NULL){
    curr = prev;
    prev = next;
 
-   
-
-
 
 
 }
